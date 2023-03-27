@@ -1,13 +1,9 @@
 /**
  * @type {import('next').NextConfig}
  */
-const withPlugins = require('next-compose-plugins');
-
 const nextConfig = {
-  // distDir: '../../dist/functions/next'
-  images: {
-    domains: ['pbs.twimg.com'],
-  },
-};
+  output: 'export',
+  distDir: 'dist',
+}
 
-module.exports = withPlugins([], nextConfig);
+module.exports = nextConfig
